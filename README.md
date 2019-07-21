@@ -77,7 +77,7 @@ openrouteservice.org
   - Known bug, will not fix  
     https://github.com/GIScience/openrouteservice-app/issues/193
   - Solution  
-    network.http.referer.XOriginPolicy = 1 (secure default: 2)
+    network.http.referer.XOriginPolicy = 1 (secure default: 2)  
     network.http.sendRefererHeader = 2     (secure default: 0)
 
 https://addons.thunderbird.net, https://accounts.firefox.com
@@ -85,23 +85,23 @@ https://addons.thunderbird.net, https://accounts.firefox.com
   - Solution  
     network.http.sendRefererHeader = 1     (secure default: 0)
 
-Windy, Windfinder, etc.
+https://www.windy.com, https://www.windfinder.com, etc.
   - "Snowstorm"-like display
   - Solution  
     privacy.resistFingerprinting = false  (secure default: true)
 
-www.xilinx.com/registration/sign-in.html
+https://www.xilinx.com/registration/sign-in.html
   - Login redirects to Maintenance page
   - Solution  
     network.http.sendRefererHeader = 2    (secure default: 0)
 
-share.garmin.com, inreach.garmin.com
+https://share.garmin.com, https://inreach.garmin.com
   - Left-Bar does not come up, no tracks visible
   - Solution  
     network.http.referer.trimmingPolicy=1     (secure default: 2)  
     network.http.sendRefererHeader=2          (secure default: 0)
 
-inreach.garmin.com
+https://inreach.garmin.com
   - Login not possible (unknown error)
   - Solution  
     network.http.referer.trimmingPolicy=1     (secure default: 2)  
@@ -116,13 +116,13 @@ https://www.kickstarter.com Payment
     Disable CanvasBlocker
   - Better solution available?
 
-Local gpx2map with Google Maps
+Local [gpx2map](https://github.com/sd2k9/gpx2map) with Google Maps
   - No map visible
   - Solution  
     uMatrix disable local scope filtering
   - Better solution available?
 
-Local gpx2map Openstreetmap Map
+Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - No map visible
   - Solution  
     uMatrix enable scripts 1st party, cloudflare, openstreetmaps,  
