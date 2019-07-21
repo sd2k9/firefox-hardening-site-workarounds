@@ -25,7 +25,7 @@ Hardening Add-ons
 - [CanvasBlocker](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/)
 - [Location Guard](https://addons.mozilla.org/en-US/firefox/addon/location-guard/)
 
-License: [Creative Commons Attribution-ShareAlike 4.0](LICENSE)
+License: [Creative Commons Attribution-ShareAlike 4.0](LICENSE.txt)
 
 ### Firefox Error Messages
 
@@ -73,7 +73,7 @@ Downloading/Saving file only outputs "401 NOT AUTHORIZED"
     network.http.referer.trimmingPolicy = 1     (secure default: 2)  
     network.http.sendRefererHeader      = 2     (secure default: 0)
 
-[openrouteservice.org](https://openrouteservice.org)
+[maps.openrouteservice.org](https://maps.openrouteservice.org)
   - No routing possible
   - Error messages in Firefox console  
     Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pdirections?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&attributes=detourfactor%7Cpercentage&coordinates=10.245566,51.726045%7C10.416713,51.799539&elevation=true&extra_info=steepness%7Cwaytype%7Csurface&geometry=true&geometry_format=geojson&instructions=true&instructions_format=html&options=%7B%22avoid_borders%22:%22%22,%22avoid_countries%22:%22%22%7D&preference=fastest&profile=foot-walking&units=m. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).  
