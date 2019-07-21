@@ -1,6 +1,10 @@
 Firefox Hardening Site Workarounds
 ==================================
 
+See as Github Page:  
+https://sd2k9.github.io/firefox-hardening-site-workarounds/
+
+---
 
 ### Overview
 
@@ -10,16 +14,18 @@ Temporary setting changes to workaround these failures are collected here.
 Please contribute updates or new sites via issue, merge request or mail.
 
 Hardening Sources (to just name a few)
-- https://www.privacy-handbuch.de/handbuch_21.htm
-- https://github.com/ghacksuserjs/ghacks-user.js
-- https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10/
-- https://github.com/pyllyukko/user.js
+- [https://www.privacy-handbuch.de/handbuch_21.htm](https://www.privacy-handbuch.de/handbuch_21.htm)
+- [https://github.com/ghacksuserjs/ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js)
+- [https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10/](https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10/)
+- [https://github.com/pyllyukko/user.js](https://github.com/pyllyukko/user.js)
 
 Hardening Add-ons
-- uMatrix
-- NoScript
-- CanvasBlocker
-- Location Guard
+- [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/)
+- [NoScript](https://addons.mozilla.org/en-US/firefox/addon/noscript/)
+- [CanvasBlocker](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/)
+- [Location Guard](https://addons.mozilla.org/en-US/firefox/addon/location-guard/)
+
+License: [Creative Commons Attribution-ShareAlike 4.0](LICENSE)
 
 ### Firefox Error Messages
 
@@ -61,13 +67,13 @@ Downloading/Saving file only outputs "401 NOT AUTHORIZED"
 
 ### Websites
 
-kraken.com
+[kraken.com](https://kraken.com)
   - No login possible
   - Solution  
     network.http.referer.trimmingPolicy = 1     (secure default: 2)  
     network.http.sendRefererHeader      = 2     (secure default: 0)
 
-openrouteservice.org
+[openrouteservice.org](https://openrouteservice.org)
   - No routing possible
   - Error messages in Firefox console  
     Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pdirections?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&attributes=detourfactor%7Cpercentage&coordinates=10.245566,51.726045%7C10.416713,51.799539&elevation=true&extra_info=steepness%7Cwaytype%7Csurface&geometry=true&geometry_format=geojson&instructions=true&instructions_format=html&options=%7B%22avoid_borders%22:%22%22,%22avoid_countries%22:%22%22%7D&preference=fastest&profile=foot-walking&units=m. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).  
@@ -75,33 +81,36 @@ openrouteservice.org
     Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pgeocoding?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&lang=en&limit=1&location=10.416713,+51.799539. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).  
     Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pplaces?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&request=category_list. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
   - Known bug, will not fix  
-    https://github.com/GIScience/openrouteservice-app/issues/193
+    [https://github.com/GIScience/openrouteservice-app/issues/193](https://github.com/GIScience/openrouteservice-app/issues/193)
   - Solution  
     network.http.referer.XOriginPolicy = 1 (secure default: 2)  
     network.http.sendRefererHeader = 2     (secure default: 0)
 
-https://addons.thunderbird.net, https://accounts.firefox.com
+[addons.thunderbird.net](https://addons.thunderbird.net),
+[accounts.firefox.com](https://accounts.firefox.com)
   - No login possible
   - Solution  
     network.http.sendRefererHeader = 1     (secure default: 0)
 
-https://www.windy.com, https://www.windfinder.com, etc.
+[www.windy.com](https://www.windy.com),
+[www.windfinder.com](https://www.windfinder.com), etc.
   - "Snowstorm"-like display
   - Solution  
     privacy.resistFingerprinting = false  (secure default: true)
 
-https://www.xilinx.com/registration/sign-in.html
+[www.xilinx.com/registration/sign-in.html](https://www.xilinx.com/registration/sign-in.html)
   - Login redirects to Maintenance page
   - Solution  
     network.http.sendRefererHeader = 2    (secure default: 0)
 
-https://share.garmin.com, https://inreach.garmin.com
+[share.garmin.com](https://share.garmin.com),
+[inreach.garmin.com](https://inreach.garmin.com)
   - Left-Bar does not come up, no tracks visible
   - Solution  
     network.http.referer.trimmingPolicy=1     (secure default: 2)  
     network.http.sendRefererHeader=2          (secure default: 0)
 
-https://inreach.garmin.com
+[inreach.garmin.com](https://inreach.garmin.com)
   - Login not possible (unknown error)
   - Solution  
     network.http.referer.trimmingPolicy=1     (secure default: 2)  
@@ -110,7 +119,7 @@ https://inreach.garmin.com
   - Solution  
     Reload page (F5)
 
-https://www.kickstarter.com Payment
+[www.kickstarter.com](https://www.kickstarter.com) Payment
   - unknown_error when paying
   - Solution  
     Disable CanvasBlocker
@@ -128,7 +137,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     uMatrix enable scripts 1st party, cloudflare, openstreetmaps,  
     images for google.com to show markers
 
-https://www.ebay-kleinanzeigen.de
+[www.ebay-kleinanzeigen.de](https://www.ebay-kleinanzeigen.de)
   - Pictures added to announce are all blank
   - Solution  
     privacy.resistFingerprinting = false (secure default: true)
