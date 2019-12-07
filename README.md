@@ -64,6 +64,17 @@ Downloading/Saving file only outputs "401 NOT AUTHORIZED"
   - Solution  
     privacy.firstparty.isolate = false
 
+File Save As... fails in Firefox+uMatrix
+  - References
+    - https://github.com/uBlockOrigin/uMatrix-issues/issues/92
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1343466
+  - See the failing request in the uMatrix Logger
+    - Directly enable it there by right-clicking on the "--" in the blocked line
+  - Solution  
+    Either allow "other" for the source location
+    or  
+    Open Tools/Download (Ctrl-Shift-Y) and click "Reload" icon
+
 
 ### Websites
 
