@@ -66,8 +66,8 @@ Downloading/Saving file only outputs "401 NOT AUTHORIZED"
 
 File Save As... fails in Firefox+uMatrix
   - References
-    - https://github.com/uBlockOrigin/uMatrix-issues/issues/92
-    - https://bugzilla.mozilla.org/show_bug.cgi?id=1343466
+    - [https://github.com/uBlockOrigin/uMatrix-issues/issues/92](https://github.com/uBlockOrigin/uMatrix-issues/issues/92)
+    - [https://bugzilla.mozilla.org/show_bug.cgi?id=1343466](https://bugzilla.mozilla.org/show_bug.cgi?id=1343466)
   - See the failing request in the uMatrix Logger
     - Directly enable it there by right-clicking on the "--" in the blocked line
   - Solution  
