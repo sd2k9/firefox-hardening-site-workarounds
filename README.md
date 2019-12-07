@@ -76,6 +76,14 @@ File Save As... fails in Firefox+uMatrix
     Open Tools/Download (Ctrl-Shift-Y) and click "Reload" icon
 
 
+### General Web Cancer
+
+Google ReCaptcha
+  - umatrix
+    - allow css,image,script,xhr,frame, www.google.com
+    - allow css,script       www.gstatic.com
+  - Canvasblocker: Disable
+
 ### Websites
 
 [kraken.com](https://kraken.com)
