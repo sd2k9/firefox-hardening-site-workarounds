@@ -56,6 +56,10 @@ Error code: MOZILLA_PKIX_ERROR_ADDITIONAL_POLICY_CONSTRAINT_FAILED
   - Solution  
     Add exception or have the site owner to use a valid certificate
 
+Error code: SEC_ERROR_OCSP_SERVER_ERROR
+  - Text: Secure Connection Failed
+  - Solution  
+    security.OCSP.require = false (secure default: true)
 
 ### General Behaviour
 
