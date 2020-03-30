@@ -164,3 +164,8 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Pictures added to announce are all blank
   - Solution  
     privacy.resistFingerprinting = false (secure default: true)
+
+[web.familinkframe.com](https://web.familinkframe.com)
+  - Pictures uploaded are all blank
+  - Solution  
+    privacy.resistFingerprinting = false (secure default: true)
