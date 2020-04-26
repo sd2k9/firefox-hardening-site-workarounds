@@ -169,3 +169,11 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Pictures uploaded are all blank
   - Solution  
     privacy.resistFingerprinting = false (secure default: true)
+
+[alternate.de](https://www.alternate.de)
+  - No login possible
+    - Error message: _Das hat nicht funktioniert_
+    - Redirect to https://www.alternate.de/html/help/invalidRequest.html
+  - Solution  
+    network.http.referer.trimmingPolicy = 1     (secure default: 2)  
+    network.http.sendRefererHeader      = 2     (secure default: 0)
