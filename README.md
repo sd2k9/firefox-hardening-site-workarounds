@@ -161,9 +161,14 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     images for google.com to show markers
 
 [www.ebay-kleinanzeigen.de](https://www.ebay-kleinanzeigen.de)
-  - Pictures added to announce are all blank
-  - Solution  
-    privacy.resistFingerprinting = false (secure default: true)
+  1. [Login page](https://www.ebay-kleinanzeigen.de/m-einloggen.html)
+     stays blank and redirect to itself infinitely
+     - Solution
+       network.http.referer.trimmingPolicy = 1  (secure default: 2)  
+       network.http.sendRefererHeader      = 2  (secure default: 0)
+  1. Pictures added to announce are all blank
+     - Solution  
+       privacy.resistFingerprinting = false (secure default: true)
 
 [web.familinkframe.com](https://web.familinkframe.com)
   - Pictures uploaded are all blank
