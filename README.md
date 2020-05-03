@@ -166,6 +166,10 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
      - Solution  
        network.http.referer.trimmingPolicy = 1  (secure default: 2)  
        network.http.sendRefererHeader      = 2  (secure default: 0)
+  1. Cannot add pictures to announce
+     - Solution  
+       webgl.disabled = false  (secure default: true)  
+       webgl.min_capability_mode = false  (secure default: true)
   1. Pictures added to announce are all blank
      - Solution  
        privacy.resistFingerprinting = false (secure default: true)
