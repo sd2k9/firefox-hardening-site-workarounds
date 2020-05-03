@@ -163,7 +163,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
 [www.ebay-kleinanzeigen.de](https://www.ebay-kleinanzeigen.de)
   1. [Login page](https://www.ebay-kleinanzeigen.de/m-einloggen.html)
      stays blank and redirect to itself infinitely
-     - Solution
+     - Solution  
        network.http.referer.trimmingPolicy = 1  (secure default: 2)  
        network.http.sendRefererHeader      = 2  (secure default: 0)
   1. Pictures added to announce are all blank
