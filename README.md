@@ -79,6 +79,12 @@ File Save As... fails in Firefox+uMatrix
     or  
     Open Tools/Download (Ctrl-Shift-Y) and click "Reload" icon
 
+Time displayed has some hours offset to local time
+  - When resistFingerprinting is enabled the time zone is spoofed to UTC
+  - Solution  
+    privacy.resistFingerprinting = false  (secure default: true)
+  - See [Mozilla Bug 1364261](https://bugzilla.mozilla.org/show_bug.cgi?id=1364261)
+
 
 ### General Web Cancer
 
