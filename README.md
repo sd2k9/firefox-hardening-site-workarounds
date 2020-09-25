@@ -41,7 +41,7 @@ Error code: SSL_ERROR_UNSAFE_NEGOTIATION
     An error occurred during a connection to website.
     Peer attempted old style (potentially vulnerable) handshake.
   - Solution  
-    security.ssl.require_safe_negotiation = true
+    security.ssl.require_safe_negotiation = false
 
 Error code: SSL_ERROR_UNSUPPORTED_VERSION
   - Text: Secure Connection Failed  
@@ -186,3 +186,20 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Solution  
     network.http.referer.trimmingPolicy = 1     (secure default: 2)  
     network.http.sendRefererHeader      = 2     (secure default: 0)
+
+[bing.com/maps](https://www.bing.com/maps)
+ - Map does not display
+    - Firefox shows error message concerning CanvasBlocker slowing down the page
+  - Solution  
+    Add to CanvasBlocker Whitelist: www.bing.com/maps
+  - Better: Use [Openstreetmap](https://www.openstreetmap.org/) and
+    [Openrouteservice](https://maps.openrouteservice.org/) instead
+
+[google.com/maps](https://www.google.com/maps)
+  - Left bar is empty
+  - Empty consent frame from "consent.google.com" blocks the screen
+  - Solution  
+    NoScript: Enable WebGL (trusted)  
+    uMatrix: Cookies, Frame, Other
+  - Better: Use [Openstreetmap](https://www.openstreetmap.org/) and
+    [Openrouteservice](https://maps.openrouteservice.org/) instead
