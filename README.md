@@ -204,3 +204,8 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     uMatrix: Cookies, Frame, Other
   - Better: Use [Openstreetmap](https://www.openstreetmap.org/) and
     [Openrouteservice](https://maps.openrouteservice.org/) instead
+
+[my-hammer.de](https://www.my-hammer.de)
+  - Pictures uploaded contain only color bars
+  - Solution  
+    privacy.resistFingerprinting = false (secure default: true)
