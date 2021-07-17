@@ -241,6 +241,6 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
 
 
 [eu.docusign.net](https://eu.docusign.net/)
-  - Signatur not possible
+  - Signature not possible
   - Solution  
     browser.link.open_newwindow = 2 (secure default: 1)
