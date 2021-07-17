@@ -167,13 +167,9 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     images for google.com to show markers
 
 [www.ebay-kleinanzeigen.de](https://www.ebay-kleinanzeigen.de)
-  1. Cannot add pictures to announce
-     - Solution  
-       webgl.disabled = false  (secure default: true)  
-       webgl.min_capability_mode = false  (secure default: true)
-  1. Pictures added to announce are all blank
-     - Solution  
-       privacy.resistFingerprinting = false (secure default: true)
+  - Pictures added to announce are all blank
+  - Solution  
+    privacy.resistFingerprinting = false (secure default: true)
 
 [web.familinkframe.com](https://web.familinkframe.com)
   - Pictures uploaded are all blank
@@ -209,3 +205,42 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Pictures uploaded contain only color bars
   - Solution  
     privacy.resistFingerprinting = false (secure default: true)
+
+[teams.microsoft.com](https://teams.microsoft.com/)
+  - Login not possible / Get stuck in login look with error message
+  - Solution  
+    network.cookie.cookieBehavior = 4  (secure default: 5)
+  - Same setting in GUI
+    - about:preferences#privacy
+    - Custom/Cookies/Cross-site cookies --> Cross-site _tracking_ cookies
+  - uMatrix permissions
+    ```
+    teams.microsoft.com cdn.office.net script allow
+    teams.microsoft.com cdn.office.net xhr allow
+    teams.microsoft.com login.live.com frame allow
+    teams.microsoft.com login.microsoftonline.com cookie allow
+    teams.microsoft.com login.microsoftonline.com frame allow
+    teams.microsoft.com login.microsoftonline.com script allow
+    teams.microsoft.com login.microsoftonline.com xhr allow
+    teams.microsoft.com teams.events.data.microsoft.com xhr allow
+    teams.microsoft.com teams.microsoft.com cookie allow
+    teams.microsoft.com teams.microsoft.com frame allow
+    teams.microsoft.com teams.microsoft.com script allow
+    teams.microsoft.com teams.microsoft.com xhr allow
+    login.microsoftonline.com aadcdn.msauth.net script allow
+    login.microsoftonline.com aadcdn.msauth.net xhr allow
+    login.microsoftonline.com aadcdn.msftauth.net script allow
+    login.microsoftonline.com aadcdn.msftauth.net xhr allow
+    login.microsoftonline.com login.live.com frame allow
+    login.microsoftonline.com login.microsoftonline.com cookie allow
+    login.microsoftonline.com login.microsoftonline.com script allow
+    login.microsoftonline.com login.microsoftonline.com xhr allow
+    login.microsoftonline.com teams.microsoft.com cookie allow
+    login.microsoftonline.com teams.microsoft.com script allow
+    ```
+
+
+[eu.docusign.net](https://eu.docusign.net/)
+  - Signatur not possible
+  - Solution  
+    browser.link.open_newwindow = 2 (secure default: 1)
