@@ -240,6 +240,19 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     ```
 
 
+[outlook.office365.com](https://outlook.office365.com)
+  - Login not possible / Get stuck in login look with error message
+  - uMatrix permissions
+    ```
+    outlook.office365.com cdn.office.net script allow
+    outlook.office365.com cdn.office.net xhr allow
+    outlook.office365.com microsoftonline.com cookie allow
+    outlook.office365.com outlook.office365.com cookie allow
+    outlook.office365.com outlook.office365.com script allow
+    outlook.office365.com outlook.office365.com xhr allow
+    ```
+
+
 [eu.docusign.net](https://eu.docusign.net/)
   - Signature not possible
   - Solution  
