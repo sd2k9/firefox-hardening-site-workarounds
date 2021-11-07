@@ -257,3 +257,14 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Signature not possible
   - Solution  
     browser.link.open_newwindow = 2 (secure default: 1)
+
+[web.whatsapp.com/](https://web.whatsapp.com/)
+  - Signin not possible
+  - Solution  
+    javascript.options.wasm = true (secure default: false)
+  - Signin data is lost after browser restart
+  - Solution
+    1. Disable cookie and site data deletion when Firefox is closed
+    1. Or make a backup of the data after signin  
+       In Firefox profile at `storage/default/https+++web.whatsapp.com*`
+    1. Copy to this location again before starting Firefox the next time
