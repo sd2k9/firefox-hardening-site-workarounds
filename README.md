@@ -177,6 +177,8 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     privacy.resistFingerprinting = false (secure default: true)
 
 [alternate.de](https://www.alternate.de)
+  - Cannot add items to basket, cannot use filtering functions etc.
+    - Spinning wheel forever
   - No login possible
     - Error message: _Das hat nicht funktioniert_
     - Redirect to https://www.alternate.de/html/help/invalidRequest.html
