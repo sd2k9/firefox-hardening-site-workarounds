@@ -102,19 +102,6 @@ Google ReCaptcha
     network.http.referer.trimmingPolicy = 1     (secure default: 2)  
     network.http.sendRefererHeader      = 2     (secure default: 0)
 
-[maps.openrouteservice.org](https://maps.openrouteservice.org)
-  - No routing possible
-  - Error messages in Firefox console  
-    Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pdirections?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&attributes=detourfactor%7Cpercentage&coordinates=10.245566,51.726045%7C10.416713,51.799539&elevation=true&extra_info=steepness%7Cwaytype%7Csurface&geometry=true&geometry_format=geojson&instructions=true&instructions_format=html&options=%7B%22avoid_borders%22:%22%22,%22avoid_countries%22:%22%22%7D&preference=fastest&profile=foot-walking&units=m. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).  
-    Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pgeocoding?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&lang=en&limit=1&location=10.245566,+51.726045. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).  
-    Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pgeocoding?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&lang=en&limit=1&location=10.416713,+51.799539. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).  
-    Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.openrouteservice.org/pplaces?api_key=58d904a497c67e00015b45fc75e30fe544834c7a97ebc3ce784d6e4f&request=category_list. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
-  - Known bug, will not fix  
-    [https://github.com/GIScience/openrouteservice-app/issues/193](https://github.com/GIScience/openrouteservice-app/issues/193)
-  - Solution  
-    network.http.referer.XOriginPolicy = 1 (secure default: 2)  
-    network.http.sendRefererHeader = 2     (secure default: 0)
-
 [addons.thunderbird.net](https://addons.thunderbird.net),
 [accounts.firefox.com](https://accounts.firefox.com)
   - No login possible
