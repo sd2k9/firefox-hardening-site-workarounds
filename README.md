@@ -241,6 +241,18 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     outlook.office365.com outlook.office365.com xhr allow
     ```
 
+[web.microsoftstream.com](https://web.microsoftstream.com/)
+  - Login not possible / Get stuck in login look with error message
+  - uMatrix permissions
+    ```
+    web.microsoftstream.com 1st-party cookie allow
+    web.microsoftstream.com 1st-party script allow
+    web.microsoftstream.com 1st-party xhr allow
+    web.microsoftstream.com azureedge.net script allow
+    web.microsoftstream.com azureedge.net xhr allow
+    web.microsoftstream.com cdn.office.net script allow
+    web.microsoftstream.com login.microsoftonline.com cookie allow
+    ```
 
 [eu.docusign.net](https://eu.docusign.net/)
   - Signature not possible
