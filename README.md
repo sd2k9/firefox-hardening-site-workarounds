@@ -269,3 +269,11 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     1. Or make a backup of the data after signin  
        In Firefox profile at `storage/default/https+++web.whatsapp.com*`
     1. Copy to this location again before starting Firefox the next time
+
+[www.bahn.de/](https://www.bahn.de/)
+  - Signin not possible
+    - Error message: 429 Too Many Requests (nginx)
+  - Solution
+    1. Enable webgl in NoScript
+    1. about:config = false (secure default: true)
+    1. webgl.min_capability_mode = false (secure default: true)
