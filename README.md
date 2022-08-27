@@ -16,7 +16,7 @@ Please contribute updates or new sites via issue, merge request or mail.
 Hardening Sources (to just name a few)
 - [https://www.privacy-handbuch.de/handbuch_21.htm](https://www.privacy-handbuch.de/handbuch_21.htm)
 - [https://github.com/ghacksuserjs/ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js)
-- [https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10/](https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10/)
+- [https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10](https://www.kuketz-blog.de/firefox-aboutconfig-user-js-firefox-kompendium-teil10/)
 - [https://github.com/pyllyukko/user.js](https://github.com/pyllyukko/user.js)
 
 Hardening Add-ons
@@ -259,7 +259,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Solution  
     browser.link.open_newwindow = 2 (secure default: 1)
 
-[web.whatsapp.com/](https://web.whatsapp.com/)
+[web.whatsapp.com](https://web.whatsapp.com/)
   - Signin not possible
   - Solution  
     javascript.options.wasm = true (secure default: false)
@@ -270,10 +270,10 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
        In Firefox profile at `storage/default/https+++web.whatsapp.com*`
     1. Copy to this location again before starting Firefox the next time
 
-[www.bahn.de/](https://www.bahn.de/)
+[www.bahn.de](https://www.bahn.de/)
   - Signin not possible
     - Error message: 429 Too Many Requests (nginx)
   - Solution
     1. Enable webgl in NoScript
-    1. about:config = false (secure default: true)
+    1. webgl.disabled = false (secure default: true)
     1. webgl.min_capability_mode = false (secure default: true)
