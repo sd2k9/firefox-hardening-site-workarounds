@@ -239,6 +239,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     outlook.office365.com outlook.office365.com cookie allow
     outlook.office365.com outlook.office365.com script allow
     outlook.office365.com outlook.office365.com xhr allow
+    outlook.office365.com attachments.office.net xhr allow
     ```
 
 [web.microsoftstream.com](https://web.microsoftstream.com/)
@@ -274,6 +275,13 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Signin not possible
     - Error message: 429 Too Many Requests (nginx)
   - Solution
+    1. Enable webgl in NoScript
+    1. webgl.disabled = false (secure default: true)
+    1. webgl.min_capability_mode = false (secure default: true)
+
+[couchers.org](https://couchers.org/)
+  - Map search not usable
+  - Solution (not complete)
     1. Enable webgl in NoScript
     1. webgl.disabled = false (secure default: true)
     1. webgl.min_capability_mode = false (secure default: true)
