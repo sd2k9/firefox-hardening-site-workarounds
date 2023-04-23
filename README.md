@@ -233,13 +233,13 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Login not possible / Get stuck in login look with error message
   - uMatrix permissions
     ```
+    outlook.office365.com attachments.office.net xhr allow
     outlook.office365.com cdn.office.net script allow
     outlook.office365.com cdn.office.net xhr allow
     outlook.office365.com microsoftonline.com cookie allow
     outlook.office365.com outlook.office365.com cookie allow
-    outlook.office365.com outlook.office365.com script allow
-    outlook.office365.com outlook.office365.com xhr allow
-    outlook.office365.com attachments.office.net xhr allow
+    outlook.office365.com office365.com script allow
+    outlook.office365.com office365.com xhr allow
     ```
 
 [web.microsoftstream.com](https://web.microsoftstream.com/)
@@ -255,7 +255,8 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     web.microsoftstream.com login.microsoftonline.com cookie allow
     ```
 
-[eu.docusign.net](https://eu.docusign.net/)
+[eu.docusign.net](https://eu.docusign.net/),
+[app.docusign.com/](https://app.docusign.com/)
   - Signature not possible
   - Solution  
     browser.link.open_newwindow = 2 (secure default: 1)
@@ -285,3 +286,14 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     1. Enable webgl in NoScript
     1. webgl.disabled = false (secure default: true)
     1. webgl.min_capability_mode = false (secure default: true)
+
+[register.gotowebinar.com](https://register.gotowebinar.com/)
+  - Login not possible
+  - uMatrix permissions
+    ```
+    gotowebinar.com 1st-party cookie allow
+    gotowebinar.com 1st-party script allow
+    gotowebinar.com 1st-party xhr allow
+    gotowebinar.com cdn.recordingassets.logmeininc.com media allow
+    gotowebinar.com gotomeeting.com xhr allow
+    ```
