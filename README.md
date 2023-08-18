@@ -153,7 +153,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     uMatrix enable scripts 1st party, cloudflare, openstreetmaps,  
     images for google.com to show markers
 
-[www.ebay-kleinanzeigen.de](https://www.ebay-kleinanzeigen.de)
+[www.kleinanzeigen.de](https://www.kleinanzeigen.de)
   - Pictures added to announce are all blank
   - Solution  
     privacy.resistFingerprinting = false (secure default: true)
@@ -229,17 +229,17 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     ```
 
 
-[outlook.office365.com](https://outlook.office365.com)
+[outlook.office.com](https://outlook.office.com)
   - Login not possible / Get stuck in login look with error message
   - uMatrix permissions
     ```
-    outlook.office365.com attachments.office.net xhr allow
-    outlook.office365.com cdn.office.net script allow
-    outlook.office365.com cdn.office.net xhr allow
-    outlook.office365.com microsoftonline.com cookie allow
-    outlook.office365.com outlook.office365.com cookie allow
-    outlook.office365.com office365.com script allow
-    outlook.office365.com office365.com xhr allow
+    outlook.office.com outlook.office.com cookie allow
+    outlook.office.com office365.com script allow
+    outlook.office.com office365.com xhr allow
+    outlook.office.com attachments.office.net xhr allow
+    outlook.office.com cdn.office.net script allow
+    outlook.office.com cdn.office.net xhr allow
+    outlook.office.com microsoftonline.com cookie allow
     ```
 
 [web.microsoftstream.com](https://web.microsoftstream.com/)
@@ -259,7 +259,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
 [app.docusign.com/](https://app.docusign.com/)
   - Signature not possible
   - Solution  
-    browser.link.open_newwindow = 2 (secure default: 1)
+    browser.link.open\_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
 
 [web.whatsapp.com](https://web.whatsapp.com/)
   - Signin not possible
@@ -297,3 +297,15 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     gotowebinar.com cdn.recordingassets.logmeininc.com media allow
     gotowebinar.com gotomeeting.com xhr allow
     ```
+
+[pendla.com](https://pendla.com/)
+  - Map search not usable
+  - Solution (not complete)
+    1. Enable webgl in NoScript
+    1. webgl.disabled = false (secure default: true)
+    1. webgl.min\_capability\_mode = false (secure default: true)
+
+[one.element.io](https://one.element.io/)
+  - Security related actions which require re-login don't complete
+  - Solution (not complete)  
+    browser.link.open\_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
