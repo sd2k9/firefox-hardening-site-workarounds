@@ -256,21 +256,22 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     ```
 
 [eu.docusign.net](https://eu.docusign.net/),
-[app.docusign.com/](https://app.docusign.com/)
+[app.docusign.com](https://app.docusign.com/)
   - Signature not possible
   - Solution  
     browser.link.open\_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
 
 [web.whatsapp.com](https://web.whatsapp.com/)
   - Signin not possible
-  - Solution  
-    javascript.options.wasm = true (secure default: false)
+    - Solution  
+      javascript.options.wasm = true (secure default: false)
+    - Can disable again after loading the page
   - Signin data is lost after browser restart
-  - Solution
-    1. Disable cookie and site data deletion when Firefox is closed
-    1. Or make a backup of the data after signin  
-       In Firefox profile at `storage/default/https+++web.whatsapp.com*`
-    1. Copy to this location again before starting Firefox the next time
+    - Solution
+      1. Disable cookie and site data deletion when Firefox is closed
+      1. Or make a backup of the data after signin  
+         In Firefox profile at `storage/default/https+++web.whatsapp.com*`
+      1. Copy to this location again before starting Firefox the next time
 
 [www.bahn.de](https://www.bahn.de/)
   - Signin not possible
@@ -306,6 +307,17 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
     1. webgl.min\_capability\_mode = false (secure default: true)
 
 [one.element.io](https://one.element.io/)
+  - Signin not possible
+    - Solution  
+      javascript.options.wasm = true (secure default: false)  
+      dom.webaudio.enabled = true (secure default: false)
+    - Can disable again after loading the page
+  - Signin data is lost after browser restart
+    - Solution
+      1. Disable cookie and site data deletion when Firefox is closed
+      1. Or make a backup of the data after signin  
+         In Firefox profile at `storage/default/https+++one.element.io`
+      1. Copy to this location again before starting Firefox the next time
   - Security related actions which require re-login don't complete
-  - Solution (not complete)  
-    browser.link.open\_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
+    - Solution  
+      browser.link.open_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
