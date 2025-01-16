@@ -312,6 +312,12 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
       javascript.options.wasm = true (secure default: false)  
       dom.webaudio.enabled = true (secure default: false)
     - Can disable again after loading the page
+  - Media is not visible and cannot be downloaded
+    - [Solution](https://github.com/element-hq/element-web/issues/28370)  
+      dom.serviceWorkers.enabled = true (secure default: false)  
+    - Can disable again after loading the page
+    - Sometimes need to manually start the service worker  
+      Web Developer Tools (Ctrl+Shift+I) / Application / Service Workers / one.element.io sw.js
   - Signin data is lost after browser restart
     - Solution
       1. Disable cookie and site data deletion when Firefox is closed
