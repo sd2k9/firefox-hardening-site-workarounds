@@ -116,6 +116,7 @@ Google ReCaptcha
 
 [www.xilinx.com/registration/sign-in.html](https://www.xilinx.com/registration/sign-in.html)
   - Login redirects to Maintenance page
+  - Tool download not working
   - Solution  
     network.http.sendRefererHeader = 2    (secure default: 0)
 
@@ -233,13 +234,18 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Login not possible / Get stuck in login look with error message
   - uMatrix permissions
     ```
-    outlook.office.com outlook.office.com cookie allow
-    outlook.office.com office365.com script allow
-    outlook.office.com office365.com xhr allow
-    outlook.office.com attachments.office.net xhr allow
+    outlook.office.com 1st-party cookie allow
+    outlook.office.com 1st-party script allow
+    outlook.office.com 1st-party xhr allow
+    outlook.office.com aria.microsoft.com xhr allow
     outlook.office.com cdn.office.net script allow
-    outlook.office.com cdn.office.net xhr allow
-    outlook.office.com microsoftonline.com cookie allow
+    outlook.office.com data.microsoft.com xhr allow
+    outlook.office.com YOURCOMPANY cookie allow
+    outlook.office.com login.microsoftonline.com cookie allow
+    outlook.office.com login.microsoftonline.com xhr allow
+    outlook.office.com office.net xhr allow
+    outlook.office.com static.microsoft script allow
+    outlook.office.com static.microsoft xhr allow
     ```
 
 [web.microsoftstream.com](https://web.microsoftstream.com/)
@@ -259,7 +265,7 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
 [app.docusign.com](https://app.docusign.com/)
   - Signature not possible
   - Solution  
-    browser.link.open\_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
+    browser.link.open_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
 
 [web.whatsapp.com](https://web.whatsapp.com/)
   - Signin not possible
@@ -327,3 +333,21 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
   - Security related actions which require re-login don't complete
     - Solution  
       browser.link.open_newwindow = 2 (new window) or 3 (new tab) (secure default: 1)
+
+[COMPANY.atlassian.net/jira/](https://COMPANY.atlassian.net/jira/)
+  - Login not possible
+  - Operation not possible
+  - Solution (not complete)
+    1. uMatrix permissions
+      ```
+      COMPANY.atlassian.net 1st-party cookie allow
+      id.atlassian.com 1st-party cookie allow
+      id.atlassian.com 1st-party script allow
+      id.atlassian.com 1st-party xhr allow
+      id.atlassian.com web-security-reports.services.atlassian.com other allow
+      id.atlassian.com id-frontend.prod-east.frontend.public.atl-paas.net script allow
+      id.atlassian.com identity-common-frontend.prod-east.frontend.public.atl-paas.net script allow
+      login.microsoftonline.com atlassian.com cookie allow
+      login.microsoftonline.com id.atlassian.com xhr allow
+      login.microsoftonline.com csp.microsoft.com other allow
+      ```
