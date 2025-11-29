@@ -351,3 +351,9 @@ Local [gpx2map](https://github.com/sd2k9/gpx2map) Openstreetmap Map
       login.microsoftonline.com id.atlassian.com xhr allow
       login.microsoftonline.com csp.microsoft.com other allow
       ```
+  - Solution
+
+[autoscout24.de](https://www.autoscout24.de/)
+  - Results listing empty, application error
+  - Solution
+    1. beacon.enabled = true (secure default: false)
